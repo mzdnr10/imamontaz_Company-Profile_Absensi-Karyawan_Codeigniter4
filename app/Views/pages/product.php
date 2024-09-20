@@ -12,7 +12,7 @@
             </div>
           </div>
   
-          <div class="container-fluid">
+          <div class="container-fluid" style="max-width: 80%;">
             <div class="row no-gutters">
               <div class="col-lg-3 col-md-4">
                 <div class="portfolio-item wow fadeInUp">
@@ -120,7 +120,7 @@
                 </div>
               </div>
       
-              <div class="container-fluid">
+              <div class="container-fluid" style="max-width: 80%;">
                 <div class="row no-gutters">
                   <div class="col-lg-3 col-md-4">
                     <div class="portfolio-item wow fadeInUp">
@@ -229,7 +229,7 @@
                     </div>
                   </div>
           
-                  <div class="container-fluid">
+                  <div class="container-fluid" style="max-width: 80%;">
                     <div class="row no-gutters">
                       <div class="col-lg-3 col-md-4">
                         <div class="portfolio-item wow fadeInUp">
@@ -313,7 +313,7 @@
                     </div>
                   </div>
           
-                  <div class="container-fluid">
+                  <div class="container-fluid" style="max-width: 80%;">
                     <div class="row no-gutters">
                       <div class="col-lg-3 col-md-4">
                         <div class="portfolio-item wow fadeInUp">
@@ -384,7 +384,7 @@
                     </div>
                   </div>
           
-                  <div class="container-fluid">
+                  <div class="container-fluid" style="max-width: 80%;">
                     <div class="row no-gutters">
                       <div class="col-lg-3 col-md-4">
                         <div class="portfolio-item wow fadeInUp">
@@ -546,7 +546,7 @@
                     </div>
                   </div>
           
-                  <div class="container-fluid">
+                  <div class="container-fluid" style="max-width: 80%;">
                     <div class="row no-gutters">
                       <div class="col-lg-3 col-md-4">
                         <div class="portfolio-item wow fadeInUp">
@@ -630,7 +630,7 @@
                     </div>
                   </div>
           
-                  <div class="container-fluid">
+                  <div class="container-fluid" style="max-width: 80%;">
                     <div class="row no-gutters">
                       <div class="col-lg-3 col-md-4">
                         <div class="portfolio-item wow fadeInUp">

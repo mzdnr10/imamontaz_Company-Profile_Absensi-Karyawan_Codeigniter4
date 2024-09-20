@@ -1,11 +1,8 @@
-
 /* slider info */
 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-
-
 
 body {
   background: #fff;
@@ -95,7 +92,6 @@ h6 {
   color: orange; /* Warna ikon telepon */
   margin-right: 5px;
 }
-
 
 /*--------------------------------------------------------------
 # Top Bar
@@ -220,7 +216,7 @@ h6 {
 }
 
 #intro .intro-content h2 {
-  color: #0c2e8a;
+  color: #113db7;
   margin-bottom: 30px;
   font-size: 64px;
   font-weight: 700;
@@ -232,7 +228,7 @@ h6 {
 }
 
 #intro .intro-content .btn-get-started,
-#intro .intro-content .btn-projects {
+#intro .intro-content .btn-project {
   font-family: "Raleway", sans-serif;
   font-size: 15px;
   font-weight: bold;
@@ -255,14 +251,14 @@ h6 {
   color: #0c2e8a;
 }
 
-#intro .intro-content .btn-projects {
-  background: #eea019;
-  border: 2px solid #eea019;
+#intro .intro-content .btn-project {
+  background: #25d366;
+  border: 2px solid #25d366;
 }
 
-#intro .intro-content .btn-projects:hover {
+#intro .intro-content .btn-project:hover {
   background: none;
-  color: #eea019;
+  color: #25d366;
 }
 
 #intro #intro-carousel {
@@ -271,7 +267,7 @@ h6 {
 
 #intro #intro-carousel::before {
   content: "";
-  background-color: rgba(255, 255, 255, 0.529);
+  background-color: rgba(56, 56, 56, 0.321);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -660,7 +656,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #services .box .img {
   text-align: center;
-
 }
 
 #services .box .icon i {

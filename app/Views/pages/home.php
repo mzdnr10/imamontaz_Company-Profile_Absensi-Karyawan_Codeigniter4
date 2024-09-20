@@ -6,7 +6,13 @@
       <div class="intro-content">
         <h2>PT. IMA MONNTAZ TEKNINDO</h2>
         <div>
-          <a href="#aboutus" class="btn-projects scrollto">SELENGKAPNYA
+          <a href="https://wa.me/6281318318983" class="btn-project scrollto">Whatsaapp1
+          </a>
+          <a href="https://wa.me/6281280780214" class="btn-project scrollto">Whatsaapp2
+          </a>
+          <a href="https://wa.me/6285771524066" class="btn-project scrollto">Whatsaapp3
+          </a>
+          <a href="https://wa.me/6285210005588" class="btn-project scrollto">Whatsaapp4
           </a>
         </div>
       </div>
@@ -106,37 +112,41 @@
           <div class="row">
             <div class="col-lg-6">
               <div class="box wow fadeInLeft" >
-                <div class="img"><img src="<?=base_url('assets/')?>img/intro-carousel/123.jpg" alt="" style="max-width: 250px; padding-right: 20px;"></div>
-                <h4 class="title" ><a href="">Mesin Bubut Manual</a></h4>
-                <p class="description">Jasa Bubut Menggunakan Mesin Bubut Manual
-                </p>
+                <h4 class="title" ><a href="">Machinning</a></h4>
+                <p class="description">- Bubut Convensional</p>
+                <p class="description">- Bubut CNC</p>
+                <p class="description">- Milling Convensional</p>
               </div>
             </div>
 
             <div class="col-lg-6" >
               <div class="box wow fadeInRight" >
-                <div class="img" ><img src="<?=base_url('assets/')?>img/services/milingm.jpeg" alt="" style="max-width: 225px; padding-right: 20px;" ></i></div>
-                <h4 class="title"><a href="">Mesin Milling Manual</a></h4>
-                <p class="description">Jasa Milling Menggunakan Mesin Milling Manual
-                </p>
+                <h4 class="title"><a href="">Fabrikasi</a></h4>
+                <p class="description">- Pipe Intalation</p>
+                <p class="description">- gas, Tabung Presser</p>
+                <p class="description">- Pallet-Rack</p>
+                <p class="description">- Strucktur & konstruksi Baj</p>
               </div>
             </div>
 
             <div class="col-lg-6">
               <div class="box wow fadeInLeft" data-wow-delay="0.2s">
-                <div class="img"><img src="<?=base_url('assets/')?>img/services/cnc.png" alt="" style="max-width: 225px; padding-right: 20px;"></div>
-                <h4 class="title"><a href="">Mesin Bubut CNC</a></h4>
-                <p class="description">Kita menyediakan jasa bubut menggunakan mesin bubut CNC
-                </p>
+                <h4 class="title"><a href="">Electrical</a></h4>
+                <p class="description">- Panel Kontrol</p>
+                <p class="description">- Instalasi</p>
+                <p class="description">- Heater, Element Tubular</p>
+                <p class="description">- Penagkal Petir</p>
+                <p class="description">- Kapasitor Bank</p>
               </div>
             </div>
 
             <div class="col-lg-6">
-              <div class="box wow fadeInRight" data-wow-delay="0.2s">
-                <div class="img"><img src="<?=base_url('assets/')?>img/services/cncm.png" alt="" style="max-width: 250px; padding-right: 20px;"></div>
-                <h4 class="title"><a href="">Mesin Milling CNC</a></h4>
-                <p class="description">Coming Soon
-                </p>
+              <div class="box wow fadeInLeft" data-wow-delay="0.2s">
+                <h4 class="title"><a href="">Sanding Casting & Invesment Casting</a></h4>
+                <p class="description">- Ferro Casting</p>
+                <p class="description">- Steel Casting</p>
+                <p class="description">- Stainles Casting</p>
+                <p class="description">- Patern & Pola</p>
               </div>
             </div>
           </div>
@@ -158,7 +168,7 @@
           </div>
         </div>
 
-        <div class="container-fluid">
+        <div class="container-fluid" style="max-width: 80%;">
           <div class="row no-gutters">
             <div class="col-lg-3 col-md-4">
               <div class="portfolio-item wow fadeInUp">
@@ -284,7 +294,6 @@
         <div class="owl-carousel clients-carousel">
           <img src="<?=base_url('assets/')?>img/clients/1.png" alt="">
           <img src="<?=base_url('assets/')?>img/clients/2.png" alt="">
-          <img src="<?=base_url('assets/')?>img/clients/13.png" alt="">
           <img src="<?=base_url('assets/')?>img/clients/3.png" alt="">
           <img src="<?=base_url('assets/')?>img/clients/4.png" alt="">
           <img src="<?=base_url('assets/')?>img/clients/5.png" alt="">
