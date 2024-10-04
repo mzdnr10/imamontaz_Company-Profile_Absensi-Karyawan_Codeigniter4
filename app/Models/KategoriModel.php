@@ -27,4 +27,8 @@ class KategoriModel extends Model
         return $nextId;
 
     }
+
+    public  function getnamekategori(){
+        return $this->select('id_kategori, nama_kategori')->findAll();
+    }
 }

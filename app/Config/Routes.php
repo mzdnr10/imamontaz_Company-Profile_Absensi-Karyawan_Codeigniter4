@@ -49,9 +49,13 @@ $routes->get('dashboard', 'DashController::index');
 $routes->get('kategori', 'DashController::kategori');
 $routes->get('addkategori', 'DashController::addkategori');
 $routes->post('kategoriadd', 'DashController::kategoriadd');
+$routes->get('hapuskategori/(:num)', 'DashController::hapuskategori/$1');
 
 
 $routes->get('productadd', 'DashController::productadd');
+$routes->get('tambahproduct', 'DashController::tambahproduct');
+$routes->post('dotambahproduct', 'DashController::dotambahproduct');
+
 $routes->get('clientadd', 'DashController::clientadd');
 
 

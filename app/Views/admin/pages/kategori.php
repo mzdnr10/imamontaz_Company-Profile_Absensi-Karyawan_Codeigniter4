@@ -16,7 +16,7 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th>ID</th>
+                            <th>NO</th>
                             <th>KATEGORI</th>
                             <th>IMAGE</th>
                             <th>ACTION</th>
@@ -29,8 +29,7 @@
                                 <td><?= $row['nama_kategori']; ?></td>
                                 <td><img src="<?= base_url('assets/img/img_kategori/') ?><?= $row['img_kategori']; ?>" alt="" style="max-width: 100px;"></td>
                                 <td>
-                                    <a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addProductModal">Tambah Produk</a>
-                                    <a href="#" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteProductModal">Hapus Produk</a>
+                                    <a href="<?=base_url('hapuskategori')?>/<?=$row['id_kategori']?>" class="btn btn-danger btn-sm" data-toggle="" data-target="" onclick="return confirm('Apakah Anda yakin ingin menghapus kategori ini?');">Hapus Produk</a>
                                 </td>
 
                             </tr>
