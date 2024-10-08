@@ -2,7 +2,7 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">KATEGORI</h1>
+        <h1 class="h3 mb-0 text-gray-800">Client</h1>
         <a href="<?= base_url('/addclient') ?>" class="btn btn-primary btn-sm">Tambah Produk</a>
     </div>
 
