@@ -55,8 +55,14 @@ $routes->get('hapuskategori/(:num)', 'DashController::hapuskategori/$1');
 $routes->get('productadd', 'DashController::productadd');
 $routes->get('tambahproduct', 'DashController::tambahproduct');
 $routes->post('dotambahproduct', 'DashController::dotambahproduct');
+$routes->get('hapusproduct/(:num)', 'DashController::hapusproduct/$1');
+
 
 $routes->get('clientadd', 'DashController::clientadd');
+$routes->get('addclient', 'DashController::addclient');
+$routes->post('doaddclient', 'DashController::doaddclient');
+$routes->get('hapusclient/(:num)', 'DashController::hapusclient/$1');
+
 
 
 /*

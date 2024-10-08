@@ -1,4 +1,27 @@
 /* slider info */
+.bttpro {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-link321 {
+  background-color: #eea019; /* Warna hijau */
+  color: white; /* Warna teks putih */
+  padding: 12px 24px; /* Padding untuk tombol */
+  text-align: center; /* Pusatkan teks */
+  text-decoration: none; /* Hilangkan underline */
+  display: inline-block; /* Agar tampil seperti tombol */
+  font-size: 16px; /* Ukuran teks */
+  border-radius: 5px; /* Membuat sudut membulat */
+  transition: background-color 0.3s ease-in-out; /* Efek transisi saat hover */
+  cursor: pointer; /* Ganti kursor jadi pointer */
+}
+
+.btn-link321:hover {
+  background-color: #6f4c10; /* Warna saat di hover */
+}
+
+
 
 /*--------------------------------------------------------------
 # General

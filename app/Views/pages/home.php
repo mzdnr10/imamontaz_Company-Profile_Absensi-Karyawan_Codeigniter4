@@ -188,8 +188,19 @@
         </div>
       </div>
     </section>
-    <div class="text-center">
-      <button><a href="<?= base_url('product') ?>">Selanjutnya</a></button>
+    <div class="bttpro" style="
+  text-align: center;
+  margin-top: 20px;">
+      <a href="<?=base_url('product')?>" class="btn-link456" style="background-color: #eea019; /* Warna hijau */
+  color: white; /* Warna teks putih */
+  padding: 12px 24px; /* Padding untuk tombol */
+  text-align: center; /* Pusatkan teks */
+  text-decoration: none; /* Hilangkan underline */
+  display: inline-block; /* Agar tampil seperti tombol */
+  font-size: 16px; /* Ukuran teks */
+  border-radius: 5px; /* Membuat sudut membulat */
+  transition: background-color 0.3s ease-in-out; /* Efek transisi saat hover */
+  cursor: pointer; /* Ganti kursor jadi pointer */">Selengkapnya</a>
     </div>
     <!-- #portfolio -->
     <!--==========================
@@ -204,20 +215,11 @@
         </div>
 
         <div class="owl-carousel clients-carousel">
-          <img src="<?= base_url('assets/') ?>img/clients/1.png" alt="">
-          <img src="<?= base_url('assets/') ?>img/clients/2.png" alt="">
-          <img src="<?= base_url('assets/') ?>img/clients/3.png" alt="">
-          <img src="<?= base_url('assets/') ?>img/clients/4.png" alt="">
-          <img src="<?= base_url('assets/') ?>img/clients/5.png" alt="">
-          <img src="<?= base_url('assets/') ?>img/clients/6.png" alt="">
-          <img src="<?= base_url('assets/') ?>img/clients/7.png" alt="">
-          <img src="<?= base_url('assets/') ?>img/clients/8.png" alt="">
-          <img src="<?= base_url('assets/') ?>img/clients/9.png" alt="">
-          <img src="<?= base_url('assets/') ?>img/clients/10.png" alt="">
-          <img src="<?= base_url('assets/') ?>img/clients/11.png" alt="">
-          <img src="<?= base_url('assets/') ?>img/clients/12.png" alt="">
-          <img src="<?= base_url('assets/') ?>img/clients/16.png" alt="">
-          <img src="<?= base_url('assets/') ?>img/clients/17.png" alt="">
+          
+        <?php foreach ($client as $row): ?>
+          <img src="<?= base_url('assets/') ?>img/img_client/<?=$row['img_client'];?>" alt="">
+          
+        <?php endforeach; ?>
         </div>
 
       </div>
