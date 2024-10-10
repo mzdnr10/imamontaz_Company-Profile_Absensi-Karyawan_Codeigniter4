@@ -169,12 +169,12 @@
         <div class="row no-gutters">
 
           <?php foreach ($kategori as $row): ?>
-            <div class="col-lg-3 col-md-4">
-              <div class="portfolio-item wow fadeInUp">
-                <a href="<?= base_url('assets/img/') ?>img_kategori/<?= $row['img_kategori']; ?>" class="portfolio-popup">
+            <div class="col-lg-3 col-md-4" >
+              <div class="portfolio-item wow fadeInUp" >
+                <a href="<?= base_url('assets/img/') ?>img_kategori/<?= $row['img_kategori']; ?>" class="portfolio-popup" >
                   <img src="<?= base_url('assets/img/') ?>img_kategori/<?= $row['img_kategori']; ?>" alt="" />
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-info">
+                  <div class="portfolio-overlay" >
+                    <div class="portfolio-info" >
                       <h2 class="wow fadeInUp"><?= $row['nama_kategori']; ?></h2>
                     </div>
                   </div>

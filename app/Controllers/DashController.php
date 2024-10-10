@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Models\KategoriModel;
 use App\Models\ProductModel;
 use App\Models\ClientModel;
+use App\Models\DashModel;
 use Intervention\Image\ImageManagerStatic as Image;
 
 
@@ -19,11 +20,21 @@ class DashController extends BaseController
             // Jika belum login, redirect ke halaman login
             return redirect()->to('auth');
         }
+
+        $model = new DashModel();
+
+        // Mendapatkan jumlah field dari setiap tabel
+        $data = $model->getTableFieldsCount();
+
+
         $data['title'] = 'PT. Ima Montaz Teknindo';
         echo view('admin/temp/lheader', $data);
         echo view('admin/temp/sidebar');
         echo view('admin/temp/topbar');
-        echo view('admin/pages/dashboard');
+        echo view('admin/pages/dashboard', $data);
+        
+        // echo '<pre>';
+        //     print_r($data);
     }
 
     public function kategori()

@@ -17,11 +17,11 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                ==============</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">=========</div>
+                                                Product</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?=$product?></div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                            <i class="fas fa-box fa-2x text-gray-300"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -34,11 +34,11 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                ==============</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">=========</div>
+                                                Kategori</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?=$kategori_product?></div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                            <i class="fas fa-boxes fa-2x text-gray-300"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -51,11 +51,11 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                ==============</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">=========</div>
+                                                Client</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?=$client?></div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                            <i class="fas fa-clipboard fa-2x text-gray-300"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -68,8 +68,8 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                ==============</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">=========</div>
+                                                </div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"></div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-calendar fa-2x text-gray-300"></i>

@@ -5,8 +5,8 @@
   <meta charset="utf-8" />
   <title><?= $title ?></title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <meta content="" name="keywords" />
-  <meta content="" name="description" />
+  <meta content="PT. Ima Montaz Teknindo" name="keywords" />
+  <meta content="kami melayani pembuatan dan perbaikan komponen mesin dengan presisi tinggi menggunakan mesin bubut modern. Kami siap mengerjakan berbagai jenis logam untuk kebutuhan industri, spare part, dan prototipe dengan hasil yang akurat dan berkualitas." name="description" />
 
   <!-- Favicons -->
   <link href="<?= base_url('assets/') ?>img/logo.jpeg" rel="icon" />

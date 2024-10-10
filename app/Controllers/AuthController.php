@@ -11,8 +11,8 @@ class AuthController extends BaseController
             // Jika belum login, redirect ke halaman login
             return redirect()->to('dashboard')->with('error', 'Anda harus login untuk mengakses halaman ini.');
         }
-        $data['title'] = ('Dashboard');
-        echo view('admin/temp/lheader');
+        $data['title'] = ('Administrator');
+        echo view('admin/temp/lheader', $data);
         echo view('admin/pages/login');
     }
 
