@@ -30,7 +30,7 @@
                                 <td><?= $row['number']; ?></td>
                                 <td><?= $row['nama_product']; ?></td>
                                 <td><?= $row['nama_kategori']; ?></td>
-                                <td><img src="<?= base_url('assets/img/product/') ?><?= $row['img_product']; ?>" alt="" style="max-width: 100px;"></td>
+                                <td><img src="<?= base_url('assets/img/img_product/') ?><?= $row['img_product']; ?>" alt="" style="max-width: 100px;"></td>
                                 <td>
                                     <a href="<?= base_url('hapusproduct') ?>/<?= $row['id_product'] ?>" class="btn btn-danger btn-sm" data-toggle="" data-target="" onclick="return confirm('Apakah Anda yakin ingin menghapus kategori ini?');">Hapus Produk</a>
                                 </td>

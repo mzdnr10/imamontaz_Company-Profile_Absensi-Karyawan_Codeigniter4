@@ -106,7 +106,8 @@ class DashController extends BaseController
 
         if ($image->isValid() && !$image->hasMoved()) {
             // Tentukan nama file baru berdasarkan ID kategori
-            $newName = 'img' . $data['id_kategori'] . '.jpg';
+            $ori = strtolower(str_replace(' ', '', $data['nama_kategori']));
+            $newName = $ori . '.jpg';
 
             // Pastikan folder tujuan ada atau buat jika belum ada
             $uploadPath = WRITEPATH . '../public/assets/img/img_kategori';
@@ -265,10 +266,12 @@ class DashController extends BaseController
 
         if ($image->isValid() && !$image->hasMoved()) {
             // Tentukan nama file baru berdasarkan ID kategori
-            $newName = 'img' . $data['id_product'] . '.jpg';
+            
+            $ori = strtolower(str_replace(' ', '', $data['nama_product']));
+            $newName = $ori . '.jpg';
 
             // Pastikan folder tujuan ada atau buat jika belum ada
-            $uploadPath = WRITEPATH . '../public/assets/img/product';
+            $uploadPath = WRITEPATH . '../public/assets/img/img_product';
             if (!is_dir($uploadPath)) {
                 mkdir($uploadPath, 0777, true);
             }
@@ -392,7 +395,8 @@ class DashController extends BaseController
 
         if ($image->isValid() && !$image->hasMoved()) {
             // Tentukan nama file baru berdasarkan ID kategori
-            $newName = 'img' . $data['id_client'] . '.jpg';
+            $ori = strtolower(str_replace(' ', '', $data['nama_client']));
+            $newName = $ori . '.jpg';
 
             // Pastikan folder tujuan ada atau buat jika belum ada
             $uploadPath = WRITEPATH . '../public/assets/img/img_client';
