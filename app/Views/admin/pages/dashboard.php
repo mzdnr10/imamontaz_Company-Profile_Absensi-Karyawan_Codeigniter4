@@ -324,7 +324,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; PT. Ima Montaz Teknindo 2024</span>
+                        <span>Copyright &copy; PT. IMA MONTAZ TEKNINDO 2024</span>
                     </div>
                 </div>
             </footer>

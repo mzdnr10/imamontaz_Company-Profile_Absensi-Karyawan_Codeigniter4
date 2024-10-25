@@ -9,8 +9,8 @@
   <meta content="kami melayani pembuatan dan perbaikan komponen mesin dengan presisi tinggi menggunakan mesin bubut modern. Kami siap mengerjakan berbagai jenis logam untuk kebutuhan industri, spare part, dan prototipe dengan hasil yang akurat dan berkualitas." name="description" />
 
   <!-- Favicons -->
-  <link href="<?= base_url('assets/') ?>img/logo.jpeg" rel="icon" />
-  <link href="<?= base_url('assets/') ?>img/apple-touch-icon.png" rel="apple-touch-icon" />
+  <link href="<?= base_url('public/assets/') ?>img/logos.png" rel="icon" />
+  <link href="<?= base_url('public/assets/') ?>img/apple-touch-icon.png" rel="apple-touch-icon" />
 
   <!-- Google Fonts -->
   <link
@@ -18,18 +18,18 @@
     rel="stylesheet" />
 
   <!-- Bootstrap CSS File -->
-  <link href="<?= base_url('assets/') ?>lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="<?= base_url('public/assets/') ?>lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
   <!-- Libraries CSS Files -->
-  <link href="<?= base_url('assets/') ?>lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-  <link href="<?= base_url('assets/') ?>lib/animate/animate.min.css" rel="stylesheet" />
-  <link href="<?= base_url('assets/') ?>lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
-  <link href="<?= base_url('assets/') ?>lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-  <link href="<?= base_url('assets/') ?>lib/magnific-popup/magnific-popup.css" rel="stylesheet" />
-  <link href="<?= base_url('assets/') ?>lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
+  <link href="<?= base_url('public/assets/') ?>lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="<?= base_url('public/assets/') ?>lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="<?= base_url('public/assets/') ?>lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
+  <link href="<?= base_url('public/assets/') ?>lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="<?= base_url('public/assets/') ?>lib/magnific-popup/magnific-popup.css" rel="stylesheet" />
+  <link href="<?= base_url('public/assets/') ?>lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
 
   <!-- Main Stylesheet File -->
-  <link href="<?= base_url('assets/') ?>css/style.css" rel="stylesheet" />
+  <link href="<?= base_url('public/assets/') ?>css/style.css" rel="stylesheet" />
 
 
   <!-- emailjs -->
@@ -72,8 +72,8 @@
       <div id="logo" class="pull-left">
         <!-- <h1><a href="#body" class="scrollto">Reve<span>al</span></a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo  -->
-        <h1><a href="#body" style="font-size: 15px;">
-            <img src="<?= base_url('assets/') ?>img/logo.jpeg" alt="" title="" style="max-height: 30px;" />PT. IMA MONTAZ TEKNINDO
+        <h1><a href="<?=base_url('')?>" style="font-size: 15px;">
+            <img src="<?= base_url('public/assets/') ?>img/logo.jpeg" alt="" title="" style="max-height: 30px;" />PT. IMA MONTAZ TEKNINDO
           </a>
 
       </div>

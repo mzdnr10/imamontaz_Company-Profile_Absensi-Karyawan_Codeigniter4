@@ -1,5 +1,3 @@
-
-
 <body id="page-top">
 
     <!-- Page Wrapper -->
@@ -21,7 +19,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="<?=base_url('dashboard')?>">
+                <a class="nav-link" href="<?= base_url('dashboard') ?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -57,19 +55,35 @@
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="<?=base_url('kategori')?>">
+                <a class="nav-link" href="<?= base_url('kategori') ?>">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Kategori</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?=base_url('productadd')?>">
+                <a class="nav-link" href="<?= base_url('productadd') ?>">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Product</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?=base_url('clientadd')?>">
+                <a class="nav-link" href="<?= base_url('clientadd') ?>">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Client</span></a>
+            </li>
+
+            <div class="sidebar-heading">
+                Karyawan
+            </div>
+
+            
+            <li class="nav-item">
+                <a class="nav-link" href="<?= base_url('karyawan') ?>">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Data Karyawan</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?= base_url('absensi') ?>">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Data Absensi</span></a>
             </li>
 
             <!-- Divider -->
@@ -80,5 +94,7 @@
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
 
+
+            
 
         </ul>

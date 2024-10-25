@@ -42,7 +42,7 @@
                 </div>
             </div>
             <div class="text-center">
-                <div class="small">Copyright &copy; Your Website 2024</div>
+                <div class="small">Copyright &copy; PT. IMA MONTAZ TEKNINDO 2024</div>
             </div>
         </div>
     </div>

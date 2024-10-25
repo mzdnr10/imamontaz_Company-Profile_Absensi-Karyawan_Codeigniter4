@@ -28,7 +28,7 @@
                             <tr>
                                 <td><?= $row['id_client']; ?></td>
                                 <td><?= $row['nama_client']; ?></td>
-                                <td><img src="<?= base_url('assets/img/img_client/') ?><?= $row['img_client']; ?>" alt="" style="max-width: 100px;"></td>
+                                <td><img src="<?= base_url('public/assets/img/img_client/') ?><?= $row['img_client']; ?>" alt="" style="max-width: 100px;"></td>
                                 <td>
                                     <a href="<?=base_url('hapusclient')?>/<?=$row['id_client']?>" class="btn btn-danger btn-sm" data-toggle="" data-target="" onclick="return confirm('Apakah Anda yakin ingin menghapus kategori ini?');">Hapus Produk</a>
                                 </td>

@@ -19,19 +19,19 @@
   <div id="intro-carousel" class="owl-carousel">
     <div
       class="item"
-      style="background-image: url('<?= base_url('assets/') ?>img/intro-carousel/1.jpg')"></div>
+      style="background-image: url('<?= base_url('public/assets/') ?>img/intro-carousel/1.jpg')"></div>
     <div
       class="item"
-      style="background-image: url('<?= base_url('assets/') ?>img/intro-carousel/12.jpg')"></div>
+      style="background-image: url('<?= base_url('public/assets/') ?>img/intro-carousel/12.jpg')"></div>
     <div
       class="item"
-      style="background-image: url('<?= base_url('assets/') ?>img/intro-carousel/123.jpg')"></div>
+      style="background-image: url('<?= base_url('public/assets/') ?>img/intro-carousel/123.jpg')"></div>
     <div
       class="item"
-      style="background-image: url('<?= base_url('assets/') ?>img/intro-carousel/1234.jpg')"></div>
+      style="background-image: url('<?= base_url('public/assets/') ?>img/intro-carousel/1234.jpg')"></div>
     <div
       class="item"
-      style="background-image: url('<?= base_url('assets/') ?>img/intro-carousel/12345.jpg')"></div>
+      style="background-image: url('<?= base_url('public/assets/') ?>img/intro-carousel/12345.jpg')"></div>
   </div>
 </section>
 <!-- #intro -->
@@ -65,10 +65,40 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 about-img">
-            <img src="<?= base_url('assets/') ?>img/image1.png" alt="" />
+            <img src="<?= base_url('public/assets/') ?>img/image1.png" alt="" />
           </div>
           <div class="col-lg-6 about-img">
-            <img src="<?= base_url('assets/') ?>img/image2.png" alt="" />
+            <img src="<?= base_url('public/assets/') ?>img/image2.png" alt="" />
+          </div>
+
+
+          <!-- <div class="col-lg-6 content">
+              <h2>Misi</h2>
+              <h3>
+              </h3>
+
+              <ul>
+                <li>
+                  <i class="ion-android-checkmark-circle"></i>Memperluas kesempatan bersama Sumber Daya Manusia yang ada dan mampu secara profesional dalam mengembangkan karier dan  tujuan  akhir  yang  sempurna.
+                </li>
+                <li>
+                  <i class="ion-android-checkmark-circle"></i>Memberikan kepuasan kepada setiap mitra dalam bentuk  hasil kerja dan mutu yang dapat dibanggakan.
+                  </li>
+              </ul> -->
+        </div>
+      </div>
+  </div>
+  </section>
+    <section id="about" class="wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 about-img">
+            <div class="col-lg-6 content"><h2>Workshop 1</h2></div>
+            <img src="<?= base_url('public/assets/') ?>img/wk1.jpg" alt=""  />
+          </div>
+          <div class="col-lg-6 about-img">
+          <div class="col-lg-6 content"><h2>Workshop 2</h2></div>
+            <img src="<?= base_url('public/assets/') ?>img/wk2.jpg" alt="" />
           </div>
 
 
@@ -169,12 +199,12 @@
         <div class="row no-gutters">
 
           <?php foreach ($kategori as $row): ?>
-            <div class="col-lg-3 col-md-4" >
-              <div class="portfolio-item wow fadeInUp" >
-                <a href="<?= base_url('assets/img/') ?>img_kategori/<?= $row['img_kategori']; ?>" class="portfolio-popup" >
-                  <img src="<?= base_url('assets/img/') ?>img_kategori/<?= $row['img_kategori']; ?>" alt="" />
-                  <div class="portfolio-overlay" >
-                    <div class="portfolio-info" >
+            <div class="col-lg-3 col-md-4">
+              <div class="portfolio-item wow fadeInUp">
+                <a href="<?= base_url('public/assets/img/') ?>img_kategori/<?= $row['img_kategori']; ?>" class="portfolio-popup">
+                  <img src="<?= base_url('public/assets/img/') ?>img_kategori/<?= $row['img_kategori']; ?>" alt="" />
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
                       <h2 class="wow fadeInUp"><?= $row['nama_kategori']; ?></h2>
                     </div>
                   </div>
@@ -191,7 +221,7 @@
     <div class="bttpro" style="
   text-align: center;
   margin-top: 20px;">
-      <a href="<?=base_url('product')?>" class="btn-link456" style="background-color: #eea019; /* Warna hijau */
+      <a href="<?= base_url('product') ?>" class="btn-link456" style="background-color: #eea019; /* Warna hijau */
   color: white; /* Warna teks putih */
   padding: 12px 24px; /* Padding untuk tombol */
   text-align: center; /* Pusatkan teks */
@@ -215,11 +245,11 @@
         </div>
 
         <div class="owl-carousel clients-carousel">
-          
-        <?php foreach ($client as $row): ?>
-          <img src="<?= base_url('assets/') ?>img/img_client/<?=$row['img_client'];?>" alt="">
-          
-        <?php endforeach; ?>
+
+          <?php foreach ($client as $row): ?>
+            <img src="<?= base_url('public/assets/') ?>img/img_client/<?= $row['img_client']; ?>" alt="">
+
+          <?php endforeach; ?>
         </div>
 
       </div>

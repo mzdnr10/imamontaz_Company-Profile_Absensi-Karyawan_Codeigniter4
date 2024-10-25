@@ -12,8 +12,8 @@
             <?php foreach ($group['products'] as $product) : ?>
               <div class="col-lg-3 col-md-4">
                 <div class="portfolio-item wow fadeInUp">
-                  <a href="<?=base_url('assets/')?>img/Product/<?=$product['img_product'];?>" class="portfolio-popup">
-                    <img src="<?=base_url('assets/')?>img/Product/<?=$product['img_product'];?>" alt="" />
+                  <a href="<?=base_url('public/assets/')?>img/img_Product/<?=$product['img_product'];?>" class="portfolio-popup">
+                    <img src="<?=base_url('public/assets/')?>img/img_Product/<?=$product['img_product'];?>" alt="" />
                     <div class="portfolio-overlay">
                       <div class="portfolio-info">
                         <h2 class="wow fadeInUp"><?=$product['nama_product'];?></h2>

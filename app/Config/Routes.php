@@ -64,6 +64,23 @@ $routes->post('doaddclient', 'DashController::doaddclient');
 $routes->get('hapusclient/(:num)', 'DashController::hapusclient/$1');
 
 
+$routes->get('karyawan', 'KaryawanController::index');
+$routes->get('tambahkaryawan', 'KaryawanController::tambahkaryawan');
+$routes->post('dotambahkaryawan', 'KaryawanController::dotambahkaryawan');
+$routes->get('hadir/(:num)', 'KaryawanController::hadir/$1');
+$routes->get('izin/(:num)', 'KaryawanController::izin/$1');
+$routes->get('tidakhadir/(:num)', 'KaryawanController::tidakhadir/$1');
+
+
+$routes->get('absensi', 'KaryawanController::absensi');
+$routes->get('addlembur/(:num)', 'KaryawanController::addlembur/$1');
+$routes->get('hapuslembur', 'KaryawanController::hapuslembur/$1');
+$routes->get('hapuslembur/(:num)', 'KaryawanController::hapuslembur/$1');
+
+
+
+
+
 
 /*
  * --------------------------------------------------------------------
