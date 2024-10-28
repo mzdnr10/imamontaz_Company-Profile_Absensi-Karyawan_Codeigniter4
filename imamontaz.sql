@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 11, 2024 at 11:10 AM
+-- Generation Time: Oct 28, 2024 at 02:23 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -20,6 +20,19 @@ SET time_zone = "+00:00";
 --
 -- Database: `imamontaz`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `absensi`
+--
+
+CREATE TABLE `absensi` (
+  `id_absensi` int(11) NOT NULL,
+  `id_karyawan` int(11) NOT NULL,
+  `tanggal` date NOT NULL,
+  `Keterangan` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -64,6 +77,18 @@ INSERT INTO `client` (`id_client`, `nama_client`, `img_client`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `karyawan`
+--
+
+CREATE TABLE `karyawan` (
+  `id_karyawan` int(11) NOT NULL,
+  `nama_karyawan` varchar(100) NOT NULL,
+  `no_hp` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `kategori_product`
 --
 
@@ -87,6 +112,19 @@ INSERT INTO `kategori_product` (`id_kategori`, `nama_kategori`, `img_kategori`) 
 (7, 'REWINDING', 'rewinding.jpg'),
 (8, 'CONVEYOR', 'conveyor.jpg'),
 (9, 'PEBUATAN PINTU AIR', 'pebuatanpintuair.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `lemburan`
+--
+
+CREATE TABLE `lemburan` (
+  `id_lembur` int(11) NOT NULL,
+  `id_karyawan` int(11) NOT NULL,
+  `id_absensi` int(11) NOT NULL,
+  `jumlah_lemburan` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -172,11 +210,18 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id_user`, `email`, `password`) VALUES
-(1, 'imamontaz.pt@gmail.com', 'imamontaz2021');
+(1, 'admin@gmail.com', '123');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `absensi`
+--
+ALTER TABLE `absensi`
+  ADD PRIMARY KEY (`id_absensi`),
+  ADD KEY `id_karyawan` (`id_karyawan`);
 
 --
 -- Indexes for table `client`
@@ -185,10 +230,24 @@ ALTER TABLE `client`
   ADD PRIMARY KEY (`id_client`);
 
 --
+-- Indexes for table `karyawan`
+--
+ALTER TABLE `karyawan`
+  ADD PRIMARY KEY (`id_karyawan`);
+
+--
 -- Indexes for table `kategori_product`
 --
 ALTER TABLE `kategori_product`
   ADD PRIMARY KEY (`id_kategori`);
+
+--
+-- Indexes for table `lemburan`
+--
+ALTER TABLE `lemburan`
+  ADD PRIMARY KEY (`id_lembur`),
+  ADD KEY `id_karyawan` (`id_karyawan`,`id_absensi`),
+  ADD KEY `id_absensi` (`id_absensi`);
 
 --
 -- Indexes for table `product`
@@ -208,16 +267,34 @@ ALTER TABLE `user`
 --
 
 --
+-- AUTO_INCREMENT for table `absensi`
+--
+ALTER TABLE `absensi`
+  MODIFY `id_absensi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
+--
 -- AUTO_INCREMENT for table `client`
 --
 ALTER TABLE `client`
   MODIFY `id_client` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
+-- AUTO_INCREMENT for table `karyawan`
+--
+ALTER TABLE `karyawan`
+  MODIFY `id_karyawan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
 -- AUTO_INCREMENT for table `kategori_product`
 --
 ALTER TABLE `kategori_product`
   MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `lemburan`
+--
+ALTER TABLE `lemburan`
+  MODIFY `id_lembur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
 -- AUTO_INCREMENT for table `product`
@@ -234,6 +311,19 @@ ALTER TABLE `user`
 --
 -- Constraints for dumped tables
 --
+
+--
+-- Constraints for table `absensi`
+--
+ALTER TABLE `absensi`
+  ADD CONSTRAINT `absensi_ibfk_1` FOREIGN KEY (`id_karyawan`) REFERENCES `karyawan` (`id_karyawan`);
+
+--
+-- Constraints for table `lemburan`
+--
+ALTER TABLE `lemburan`
+  ADD CONSTRAINT `lemburan_ibfk_1` FOREIGN KEY (`id_absensi`) REFERENCES `absensi` (`id_absensi`),
+  ADD CONSTRAINT `lemburan_ibfk_2` FOREIGN KEY (`id_karyawan`) REFERENCES `karyawan` (`id_karyawan`);
 
 --
 -- Constraints for table `product`
