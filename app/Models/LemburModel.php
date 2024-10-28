@@ -8,7 +8,7 @@ class LemburModel extends Model
 {
     protected $table = 'Lemburan'; // Nama tabel dalam database
     protected $primaryKey = 'id_lembur'; // Primary key
-    protected $allowedFields = ['id_lembur', 'id_absensi', 'id_karyawan']; // Kolom yang diizinkan untuk diakses
+    protected $allowedFields = ['id_lembur', 'id_absensi', 'id_karyawan', 'jumlah_lemburan']; // Kolom yang diizinkan untuk diakses
 
     // Fungsi untuk mengambil semua kategori
     public function getlembur()

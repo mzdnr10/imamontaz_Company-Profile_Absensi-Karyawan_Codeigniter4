@@ -74,17 +74,17 @@
 
                 
     <!-- Bootstrap core JavaScript-->
-    <script src="<?=base_url()?>vendor/jquery/jquery.min.js"></script>
-    <script src="<?=base_url()?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="<?=base_url('public/')?>vendor/jquery/jquery.min.js"></script>
+    <script src="<?=base_url('public/')?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="<?=base_url()?>vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="<?=base_url('public/')?>vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="<?=base_url('public/assets/')?>js/sb-admin-2.min.js"></script>
+    <script src="<?=base_url('public/')?>js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="<?=base_url()?>vendor/chart.js/Chart.min.js"></script>
+    <script src="<?=base_url('public/')?>vendor/chart.js/Chart.min.js"></script>
 
     <!-- Page level custom scripts -->
     <script src="<?=base_url('public/assets/')?>js/demo/chart-area-demo.js"></script>

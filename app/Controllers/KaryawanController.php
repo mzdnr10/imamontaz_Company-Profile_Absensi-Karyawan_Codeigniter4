@@ -22,7 +22,8 @@ class KaryawanController extends BaseController
         }
 
         $model = new KaryawanModel();
-        $kal = new KalModel();
+        $modellemburan = new LemburModel();
+
 
         $data['karyawan'] = $model->getkaryawan();
 
@@ -30,7 +31,14 @@ class KaryawanController extends BaseController
             $data['karyawan'][$index]['number'] = $index + 1;
         }
 
-        $data['count'] = $kal->getTableFieldsCount();
+        $data['totallemburankaryawan'] = $modellemburan
+            ->select('lemburan.id_karyawan, karyawan.nama_karyawan, SUM(lemburan.jumlah_lemburan) as total_lembur')
+            ->join('karyawan', 'karyawan.id_karyawan = lemburan.id_karyawan')
+            ->groupBy('lemburan.id_karyawan')
+            ->orderBy('lemburan.id_karyawan', 'ASC')
+            ->findAll();
+
+
 
 
         // Mendapatkan jumlah field dari setiap tabel
@@ -43,7 +51,7 @@ class KaryawanController extends BaseController
         echo view('admin/karyawan/datakaryawan', $data);
 
         // echo '<pre>';
-        //     print_r($data);
+        // print_r($data);
     }
 
     public function tambahkaryawan()
@@ -280,6 +288,7 @@ class KaryawanController extends BaseController
         // Jika id_absensi belum ada, lanjutkan proses
         $data['id_karyawan'] = $modelabsen->getbyid($id_absensi)['id_karyawan'];
         $data['id_absensi'] = $id_absensi;
+        $data['jumlah_lemburan'] = 1;
 
         // Insert data lembur baru
         $modellembur->insert($data);
